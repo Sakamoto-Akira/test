@@ -13,21 +13,37 @@
         <div class="boxname">
             <label for="name">名前</label>
             <br>
-            <input id="name" type="text"name="yourname">
+            <input id="name" size="35" type="text"name="yourname">
          
         </div>
         <div class="boxmail">
             <label for="mail">メールアドレス</label>
             <br>
-            <input id="mail" type="email"name="mail">
-        </div>
-        <div class="boxage">
-            <label for="age">年齢</label>
-            <br>
-            <input id="age" type="number"name="yournumber">
-         
+            <input id="mail" size="35" type="email"name="mail">
         </div>
         
+        <div class="boxage">
+            <label>年齢</label>
+            <br>
+            <select class="dropdown"name="XXX">
+            <option>選択してください</option>
+            <script>
+              for(var i=18;i<=65;i++){
+                document.write("<option value="+i+">"+i+"歳</option>");
+              }
+            </script>
+            </select>
+         </div>
+        
+        <div class="boxtext">
+            <label>コメント</label>
+            <br>
+            <textarea name="text" rows="4" cols="35"></textarea>
+         
+        </div>
+        <div class="button">
+            <input type="submit"value="送信">         
+        </div>
        
     </form>
 </body>
