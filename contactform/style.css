@@ -27,4 +27,12 @@ form div{
 }
 
 .submit{
+    border:1px solid lightgray;
+    padding: 4px 10px;
+    color:white;
+    background-color: gray;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+}
+
     
