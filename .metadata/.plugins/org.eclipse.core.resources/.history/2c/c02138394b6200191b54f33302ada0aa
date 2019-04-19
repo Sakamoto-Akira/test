@@ -148,7 +148,7 @@ public class TestUserDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql="insert into test_table values(?,?,?)";
+		String sql="insert into test_table values(?.?.?)";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
