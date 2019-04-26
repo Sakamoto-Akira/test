@@ -37,3 +37,7 @@
 0:0:0:0:0:0:0:1 - - [23/Apr/2019:15:28:01 +0900] "GET /HelloServlet/MySQLServlet HTTP/1.1" 200 307
 0:0:0:0:0:0:0:1 - - [23/Apr/2019:15:28:03 +0900] "GET /HelloServlet/TestServlet?username=a&password=a HTTP/1.1" 200 50
 0:0:0:0:0:0:0:1 - - [23/Apr/2019:15:28:08 +0900] "POST /HelloServlet/TestServlet HTTP/1.1" 200 50
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:17:19:10 +0900] "GET /HelloServlet/ HTTP/1.1" 200 830
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:17:19:12 +0900] "GET /HelloServlet/welcome.jsp HTTP/1.1" 200 351
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:17:19:18 +0900] "GET /HelloServlet/welcome.jsp HTTP/1.1" 200 351
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:17:20:00 +0900] "GET /HelloServlet/welcome.jsp HTTP/1.1" 200 351
