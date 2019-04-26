@@ -22,7 +22,9 @@ public Connection getConnection(){
 	con = DriverManager.getConnection(url,user,password);
 	}catch(ClassNotFoundException e){
 		e.printStackTrace();
-	}catch()
+	}catch(SQLException e){
+		e.printStackTrace();
+	}
+	return con;
 }
-
 }
