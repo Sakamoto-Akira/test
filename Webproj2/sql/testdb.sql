@@ -1,4 +1,3 @@
-
 drop database if exists testdb;
 create database testdb;
 use testdb;
@@ -14,7 +13,7 @@ insert into users values(2,"jiro","456");
 insert into users values(3,"hanako","789");
 
 create table inquiry(
-name varchar (255),
-qtype varchar (255),
-bady varchar (255)
+name varchar(255),
+qtype varchar(255),
+body varchar(255)
 );

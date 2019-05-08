@@ -3,7 +3,6 @@ package com.internousdev.webproj2.action;
 import com.internousdev.webproj2.dao.InquiryCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
-
 public class InquiryCompleteAction extends ActionSupport{
 
 	private String name;
@@ -13,13 +12,12 @@ public class InquiryCompleteAction extends ActionSupport{
 	public String execute(){
 		String ret = ERROR;
 		InquiryCompleteDAO dao = new InquiryCompleteDAO();
-		int count = dao.insert(name,qtype,body);
+		int count = dao.insert(name, qtype, body);
 		if(count>0){
 			ret = SUCCESS;
 		}
 		return ret;
 	}
-
 	public String getName(){
 		return name;
 	}
@@ -39,12 +37,7 @@ public class InquiryCompleteAction extends ActionSupport{
 	public String getBody(){
 		return body;
 	}
-
 	public void setBody(String body){
 		this.body = body;
 	}
-
-
-
-
 }

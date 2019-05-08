@@ -6,16 +6,13 @@ import java.sql.SQLException;
 
 import com.internousdev.webproj2.util.DBConnector;
 
-
 public class TestDAO {
-
 	public int insert(String username,String password){
 		int ret = 0;
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
 		String sql = "insert into users(user_name,password) values(?,?)";
-
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);
@@ -35,4 +32,5 @@ public class TestDAO {
 		}
 		return ret;
 	}
+
 }
