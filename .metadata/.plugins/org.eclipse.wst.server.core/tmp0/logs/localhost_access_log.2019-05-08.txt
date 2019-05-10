@@ -22,3 +22,7 @@
 0:0:0:0:0:0:0:1 - - [08/May/2019:16:28:32 +0900] "GET /WebProj3/ HTTP/1.1" 200 1022
 0:0:0:0:0:0:0:1 - - [08/May/2019:16:28:34 +0900] "POST /WebProj3/InquiryAction.action HTTP/1.1" 200 979
 0:0:0:0:0:0:0:1 - - [08/May/2019:16:28:50 +0900] "POST /WebProj3/InquiryCompleteAction.action HTTP/1.1" 200 360
+127.0.0.1 - - [08/May/2019:16:52:13 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [08/May/2019:16:52:16 +0900] "GET /WebProj3/ HTTP/1.1" 200 2170
+0:0:0:0:0:0:0:1 - - [08/May/2019:16:52:26 +0900] "GET /WebProj3/TestAction.action?username=taro&password=123 HTTP/1.1" 200 211
+0:0:0:0:0:0:0:1 - - [08/May/2019:16:52:33 +0900] "POST /WebProj3/TestAction.action HTTP/1.1" 200 211
