@@ -23,3 +23,9 @@
 0:0:0:0:0:0:0:1 - - [10/May/2019:15:25:48 +0900] "GET /WebProj4/ HTTP/1.1" 200 1022
 0:0:0:0:0:0:0:1 - - [10/May/2019:15:25:55 +0900] "POST /WebProj4/InquiryAction.action HTTP/1.1" 200 968
 0:0:0:0:0:0:0:1 - - [10/May/2019:15:26:11 +0900] "POST /WebProj4/InquiryCompleteAction.action HTTP/1.1" 200 499
+127.0.0.1 - - [10/May/2019:16:02:28 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [10/May/2019:16:02:30 +0900] "GET /WebProj4/ HTTP/1.1" 200 2177
+0:0:0:0:0:0:0:1 - - [10/May/2019:16:02:46 +0900] "GET /WebProj4/TestAction.action?usrename=aaa&password=147 HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [10/May/2019:16:02:58 +0900] "POST /WebProj4/TestAction.action HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [10/May/2019:16:03:02 +0900] "POST /WebProj4/TestAction.action HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [10/May/2019:16:03:06 +0900] "GET /WebProj4/TestAction.action?usrename=&password= HTTP/1.1" 200 440
