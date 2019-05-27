@@ -68,7 +68,7 @@
 			<p>UserCreate</p>
 		</div>
 		<div>
-			<s:if test = "errorMessage!=">
+			<s:if test = "errorMessage!=''">
 				<s:property value = "errorMessage" escape="flase" />
 			</s:if>
 			<table>

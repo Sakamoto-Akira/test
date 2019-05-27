@@ -16,8 +16,10 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 
 	public String execute(){
 
+//作成成功にしておく
 		String result = SUCCESS;
 
+//
 		if(!(loginUserId.equals(""))
 			&& !(loginPassword.equals(""))
 			&& !(userName.equals(""))){

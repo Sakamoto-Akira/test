@@ -21,6 +21,8 @@ public class BuyItemDAO {
 				PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				ResultSet resultSet = preparedStatement.executeQuery();
 
+//select文でDBから取得した情報を型変換してDTOクラスに格納
+
 				if(resultSet.next()){
 					buyItemDTO.setId(resultSet.getInt("id"));
 					buyItemDTO.setItemName(resultSet.getString("item_name"));

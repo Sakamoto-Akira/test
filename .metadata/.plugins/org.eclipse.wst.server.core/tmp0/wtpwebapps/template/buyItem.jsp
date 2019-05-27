@@ -113,7 +113,7 @@ pageEncoding="UTF-8"%>
 
 						<td>
 							<input type = "radio" name = "pay" value = "1" checked = "checked">現金払い
-							<input type = "radio" name = "pay" value = "2">クレジットカード
+							<input type = "radio" name = "pay" value = "a">クレジットカード
 						</td>
 					</tr>
 

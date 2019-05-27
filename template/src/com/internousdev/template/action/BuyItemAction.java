@@ -16,6 +16,8 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 	public String execute(){
 		result = SUCCESS;
 
+//Integer.parseInt=文字列を整数の値として返す
+
 		session.put("stock",stock);
 		int intStock = Integer.parseInt(session.get("stock").toString());
 		int intPrice = Integer.parseInt(session.get("buyItem_price").toString());
