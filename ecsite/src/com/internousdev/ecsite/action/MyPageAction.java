@@ -1,12 +1,14 @@
 package com.internousdev.ecsite.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.internousdev.ecsite.dao.MyPageDAO;
 import com.internousdev.ecsite.dto.MyPageDTO;
+import com.opensymphony.xwork2.ActionSupport;
 
 
 public class MyPageAction extends ActionSupport implements SessionAware{
@@ -18,15 +20,22 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		private String message;
 
 		public String execute() throws SQLException{
+
+			//ログインIDがsessionになければエラーとする
 			if(!session.containsKey("login_user_id")){
 				return ERROR;
 			}
 
 			if(deleteFlg==null){
+			//履歴の削除がされているか否かチェックしている
+
 				String item_transaction_id = session.get("id").toString();
 				String user_master_id = session.get("login_user_id").toString();
+
+				//DBから取得した履歴情報を【MyPageList】に格納している
 				myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id,user_master_id);
 
+			//【delete】メソッドを呼び出して履歴の削除処理を行います
 			}else if(deleteFlg.equals("1")){
 				delete();
 			}
@@ -35,12 +44,16 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 			return result;
 		}
 
+		//履歴の削除を行うためのメソッド
 		public void delete() throws SQLException {
+
 			String item_transaction_id = session.get("id").toString();
 			String user_master_id = session.get("login_user_id").toString();
 
+			//DBから削除した履歴情報の件数を【res】に格納している
 			int res = myPageDAO.buyItemHistoryDelete(item_transaction_id, user_master_id);
 
+			//1件以上削除されたか否かで正常に削除処理がされたか判別している
 			if(res > 0) {
 				myPageList = null;
 				setMessage("商品情報を正しく削除しました。");

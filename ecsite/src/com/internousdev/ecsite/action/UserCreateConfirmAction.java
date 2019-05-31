@@ -18,10 +18,12 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	public String execute(){
 		String result = SUCCESS;
 
-		//未入力項目の有無を確認
+//もし値が入っていたら・・・ここでは未入力項目の有無を確認中！
+
 		if (!(loginUserId.equals(""))
 			&&!(loginPassword.equals(""))
 			&&!(userName.equals(""))){
+
 		//確認画面で表示したい値をセッションに格納
 				session.put("loginUserId",loginUserId);
 				session.put("loginPassword",loginPassword);

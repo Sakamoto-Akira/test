@@ -1,0 +1,12 @@
+package com.internousdev.ecsite.dao;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class ItemCreateCompleteDAO {
+
+	private DBConnector db = new getDBConnector();
+	private Connection con = db.getConnection();
+
+
+
+}

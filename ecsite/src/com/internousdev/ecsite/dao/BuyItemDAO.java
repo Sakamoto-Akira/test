@@ -22,7 +22,7 @@ public class BuyItemDAO {
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			ResultSet resultSet = preparedStatement.executeQuery();
+			ResultSet resultSet = preparedStatement.executeQuery();//SQL文の実行
 
 			if(resultSet.next()){
 		//DBから取得した情報をDTOクラスに格納

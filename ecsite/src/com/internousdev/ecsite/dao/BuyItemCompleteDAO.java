@@ -29,6 +29,7 @@ public class BuyItemCompleteDAO {
 			preparedStatement.setString(5, pay);
 			preparedStatement.setString(6, dateUtil.getDate());
 			preparedStatement.execute();
+		//現在日時を取している
 
 		}catch(Exception e){
 			e.printStackTrace();

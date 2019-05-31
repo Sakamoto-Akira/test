@@ -14,6 +14,7 @@ public class LoginDAO {
 	private Connection connection = dbConnector.getConnection();
 	private LoginDTO loginDTO = new LoginDTO();
 
+	//メソッド名は処理内容を分かりやすく！
 	public LoginDTO getLoginUserInfo(String loginUserId,String loginPassword){
 
 
@@ -32,6 +33,7 @@ public class LoginDAO {
 				loginDTO.setLoginPassword(resultSet.getString("login_pass"));
 				loginDTO.setUserName(resultSet.getString("user_name"));
 
+				//String型の場合(equals)とする
 				if(!(resultSet.getString("login_id").equals(null))){
 					loginDTO.setLoginFlg(true);
 				}

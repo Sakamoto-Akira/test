@@ -2,6 +2,8 @@ package com.internousdev.ecsite.dto;
 
 public class MyPageDTO {
 
+	//テーブルカラムに対応したフィールド変数を宣言
+
 	public String itemName;
 	public String totalPrice;
 	public String totalCount;

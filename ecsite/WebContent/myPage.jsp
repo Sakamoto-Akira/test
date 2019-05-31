@@ -68,6 +68,7 @@
 		</div>
 
 		<div>
+
 			<s:if test = "myPageList==null">
 				<h3>ご購入情報はありません。</h3>
 			</s:if>
